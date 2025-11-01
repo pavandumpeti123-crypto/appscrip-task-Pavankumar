@@ -1,0 +1,51 @@
+/* Base Styles */
+.sidebar {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-top: 25px;
+    background-color: #fff; /* Ensure the background color is consistent */
+    border-left: 1px solid #e5e5e5; /* Add border for separation from the main content */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for visual separation */
+}
+
+.customize {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+}
+
+.customize input {
+    width: 19px;
+    height: 19px;
+    border: 0.92px solid #4d4d4d;
+    margin-right: 10px;
+}
+
+.customize span {
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+/* Filter Items Styles */
+.filterItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between filter items */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        width: 250px; /* Adjust width for smaller screens if needed */
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .sidebar {
+        width: 100%; /* Full width for very small screens */
+        padding-top: 15px; /* Adjust padding for smaller screens */
+        box-shadow: none; /* Remove shadow for a cleaner look on small screens */
+    }
+}

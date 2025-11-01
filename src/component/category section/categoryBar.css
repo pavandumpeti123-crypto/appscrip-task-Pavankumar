@@ -1,0 +1,120 @@
+.categoryBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 60px;
+    border: 1px solid #E5E5E5;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    background-color: #fff;
+}
+
+.itemCount {
+    display: none;
+    font-weight: 700;
+}
+
+.filterToggle {
+    cursor: pointer;
+    position: absolute;
+    left: 180px;
+    text-decoration: underline;
+    color: #888792;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: left 0.3s ease;
+}
+
+.filterToggle img {
+    transition: transform 0.3s;
+}
+
+.filterToggle.show img {
+    transform: rotate(180deg);
+}
+
+.selectContainer {
+    position: relative;
+}
+
+.selectHeader {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectedCategory {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.selectDropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid #f3eeee;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px #aea9a9;
+    z-index: 9999;
+}
+
+.categoryOption {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 300;
+}
+
+.categoryOption.active {
+    font-weight: 700;
+    background-color: #f0f0f0;
+}
+
+/* Responsive styles */
+
+/* Tablets and small desktops */
+@media screen and (max-width: 750px) {
+    .filterToggle {
+        left: 120px;
+    }
+}
+
+/* Large phones and phablets */
+@media screen and (max-width: 550px) {
+    .filterToggle {
+        left: 100px;
+        font-size: 0.8rem;
+    }
+    .filterToggle img {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    .filterToggle {
+        left: 0;
+        font-size: 0.8rem;
+        width: 50%;
+        text-align: center;
+    }
+    .selectContainer {
+        width: 50%;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 343px) {
+    .filterToggle {
+        font-size: 0.7rem;
+    }
+}

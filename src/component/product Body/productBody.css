@@ -1,0 +1,50 @@
+/* Base Styles */
+:root {
+    --padding-horizontal: 20px;
+    --padding-sidebar: 40px;
+    --gap-horizontal: 30px;
+    --gap-vertical: 2px;
+}
+
+.product-body,
+.product-body-side {
+    width: 100%;
+    padding: 20px var(--padding-horizontal);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--gap-horizontal) var(--gap-vertical);
+}
+
+/* Sidebar Adjustments */
+.product-body-side {
+    padding-left: var(--padding-sidebar);
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 1200px) and (max-width: 1368px) {
+    .product-body-side {
+        gap: var(--gap-horizontal) var(--gap-vertical);
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+    .product-body-side {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 407px) and (max-width: 1000px) {
+    .product-body,
+    .product-body-side {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .product-body,
+    .product-body-side {
+        padding: 20px 10px;
+        justify-content: space-around;
+    }
+}

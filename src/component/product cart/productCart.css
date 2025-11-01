@@ -1,0 +1,165 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.1px solid #faf9f9;
+    width: 100%; /* Make the card responsive to container size */
+    max-width: 300px; /* Ensure maximum width for larger screens */
+    box-shadow: 0px 0px 10px #b4adad; /* Re-enabled box-shadow */
+}
+
+.card p {
+    font-size: 14px;
+    color: #888792;
+}
+
+.card h3 {
+    padding-top: 15px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-bottom > p {
+    padding: 7px 0px 4px 0px;
+    margin-bottom: 0px;
+}
+
+.card-bottom p a {
+    color: #888792;
+}
+
+.card-bottom img {
+    width: 24px;
+    height: 24px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.img-container {
+    width: 100%;
+    height: 300px; /* Default height */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .img-container {
+        height: 250px;
+    }
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .img-container {
+        height: 250px;
+    }
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .img-container {
+        height: 250px;
+    }
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .img-container {
+        height: 197px;
+    }
+    .card {
+        width: 100%;
+        max-width: 198px;
+    }
+    .card p {
+        font-size: 10px;
+    }
+    .card-bottom img {
+        width: 16px;
+        height: 16px;
+    }
+    .card h3 {
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .img-container {
+        height: 168px;
+    }
+    .card {
+        width: 100%;
+        max-width: 168px;
+    }
+    .card p {
+        font-size: 10px;
+    }
+    .card-bottom img {
+        width: 16px;
+        height: 16px;
+    }
+    .card h3 {
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .img-container {
+        height: 150px;
+    }
+    .card {
+        width: 100%;
+        max-width: 162px;
+    }
+    .card p {
+        font-size: 10px;
+    }
+    .card-bottom img {
+        width: 16px;
+        height: 16px;
+    }
+    .card h3 {
+        padding-top: 15px;
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .img-container {
+        height: 180px;
+    }
+    .card {
+        width: 100%;
+        max-width: 190px;
+    }
+    .card p {
+        font-size: 11px;
+    }
+    .card-bottom img {
+        width: 16px;
+        height: 16px;
+    }
+    .card h3 {
+        padding-top: 15px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+}

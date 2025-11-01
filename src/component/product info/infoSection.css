@@ -1,0 +1,47 @@
+/* Base Styles */
+:root {
+    --heading-font-size: 2.5rem;
+    --paragraph-font-size: 1rem;
+    --heading-margin-bottom: 20px;
+    --paragraph-line-height: 1.6;
+    --padding: 20px;
+}
+
+.product-info {
+    padding: var(--padding);
+    text-align: center;
+    background-color: #f8f9fa; /* Optional: add a background color if needed */
+}
+
+.product-info h1 {
+    font-size: var(--heading-font-size);
+    margin-bottom: var(--heading-margin-bottom);
+    font-weight: 700; /* Optional: adjust weight for emphasis */
+}
+
+.product-info p {
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-line-height);
+    color: #333; /* Optional: adjust color as needed */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .product-info h1 {
+        font-size: 2rem;
+    }
+
+    .product-info p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-info p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,96 @@
+.row {
+  padding: 25px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.arrow-up, .arrow-down {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.arrow-up {
+  transform: rotate(90deg);
+}
+
+.arrow-down {
+  transform: rotate(-90deg);
+}
+
+.row-bottom {
+  font-size: 1rem;
+}
+
+.row-select {
+  padding-top: 20px;
+}
+
+.row-select span {
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #BFC8CD;
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 0;
+}
+
+.checkbox input {
+  height: 18px;
+  width: 18px;
+  border: 0.75px solid #4D4D4D;
+  cursor: pointer;
+}
+
+.checkbox span {
+  color: #252020;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .row-bottom {
+    font-size: 0.9rem;
+  }
+
+  .row-select {
+    padding-top: 15px;
+  }
+
+  .checkbox {
+    padding: 8px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    padding: 20px 0;
+  }
+
+  .checkbox input {
+    height: 16px;
+    width: 16px;
+  }
+
+  .checkbox span, .row-select span {
+    font-size: 0.9rem;
+  }
+
+  .row-top {
+    margin-bottom: 3px;
+  }
+}
