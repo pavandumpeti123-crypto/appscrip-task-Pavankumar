@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { productDataAction } from "../../store/store";
 import "./filterItem.css";
-import arrowLeft from "../../assets/arrow-left.png";
+import arrowLeft from "../../assets/icons8-left-arrow-30.png";
 
 export default function FilterItem({ item }) {
     const dispatch = useDispatch();

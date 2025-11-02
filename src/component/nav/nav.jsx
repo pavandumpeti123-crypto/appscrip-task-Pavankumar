@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./nav.css";
-import logo2 from "../../assets/Logo2.png";
-import searchLogo from "../../assets/searchLogo.png";
-import heartLogo from "../../assets/heartLogo.png";
-import bagLogo from "../../assets/bagLogo.png";
-import userLogo from "../../assets/userLogo.png";
-import menuLogo from "../../assets/menulogo.png";
+import logo2 from "../../assets/icons8-menu-128.png";
+import searchLogo from "../../assets/icons8-search-30.png";
+import heartLogo from "../../assets/icons8-heart-48.png";
+import bagLogo from "../../assets/icons8-bag-24.png";
+import userLogo from "../../assets/icons8-user-24.png";
+import menuLogo from "../../assets/icons8-menu-128.png";
 
 const NAV_ITEMS = [
     { src: searchLogo, alt: "Search", action: null },

@@ -1,5 +1,5 @@
 import "./header.css";
-import logo1 from "../../assets/logo1.png";
+import logo1 from "../../assets/icons8-card-exchange-24.png";
 
 export default function Header() {
     return (

@@ -1,16 +1,16 @@
 import "./footer.css"
-import usLogo from "../../assets/usLogo.png"
-import linkedin from "../../assets/linkedin.png"
-import insta from "../../assets/Insta.png"
-import Gpay from "../../assets/Gpay.png"
+import usLogo from "../../assets/icons8-usa-48 (2).png"
+import linkedin from "../../assets/icons8-linkedin-48.png"
+import insta from "../../assets/icons8-instagram-logo-48.png"
+import Gpay from "../../assets/icons8-google-pay-48.png"
 import Opay from "../../assets/Opay.png"
-import payPal from "../../assets/payPal.png"
-import apple from "../../assets/apple.png"
-import amex from "../../assets/amex.png"
-import masterCard from "../../assets/masterCard.png"
-import star from "../../assets/star.png"
+import payPal from "../../assets/icons8-paypal-48 (1).png"
+import apple from "../../assets/apple-pay.png"
+import amex from "../../assets/icons8-amex-48.png"
+import masterCard from "../../assets/shopping.png"
+import star from "../../assets/icons8-dot-24.png"
 import FooterDropDown from "../footerDropDown/footerDropDown"
-import arrow from "../../assets/arrow-down.png"
+import arrow from "../../assets/icons8-right-arrow-30.png"
 import { useState } from "react"
 
 export default function Footer() {
@@ -100,7 +100,7 @@ export default function Footer() {
                 <h3 style={{ fontSize: "18px" }}>mettā muse ACCEPTS</h3>
 
                 <section className="payment">
-                    <img src={Gpay} />
+                    <img className="google-pay" src={Gpay} />
                     <img src={masterCard} />
                     <img src={payPal} />
                     <img src={amex} />

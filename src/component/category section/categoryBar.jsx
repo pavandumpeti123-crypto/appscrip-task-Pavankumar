@@ -1,5 +1,5 @@
 import "./categoryBar.css";
-import arrowLeft from "../../assets/arrow-left.png";
+import arrowLeft from "../../assets/icons8-left-arrow-30.png";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { productDataAction } from "../../store/store";

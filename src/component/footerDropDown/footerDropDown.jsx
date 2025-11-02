@@ -1,5 +1,5 @@
 import "./footerDropDown.css";
-import arrow from "../../assets/arrow-down.png";
+import arrow from "../../assets/icons8-right-arrow-30.png";
 import { useState } from "react";
 
 export default function FooterDropDown({ item }) {

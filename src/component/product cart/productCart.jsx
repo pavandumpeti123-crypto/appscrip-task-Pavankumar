@@ -1,6 +1,6 @@
 import "./productCart.css"
-import heart from "../../assets/heart.png"
-import redHeartLogo from '../../assets/redHeart.png'
+import heart from "../../assets/icons8-heart-48.png"
+import redHeartLogo from '../../assets/icons8-heart-48 (1).png'
 import { useState } from "react"
 import {useDispatch}  from 'react-redux'
 import { favoriteDataAction } from "../../store/store"
